@@ -1,0 +1,20 @@
+<div class="mainWrap">
+    <div class="selectionWrap">
+        <div [class.login]="!login" [class.active]="login" (click)="loginFunc()">Login</div>
+        <div [class.signup]="!signin" [class.active]="signin" (click)="signupFunc()">Sign In</div>
+    </div>
+    @if (login) {
+    <div class="loginWrap">
+        <input type="email" placeholder="Enter your mail" id="loginid">
+        <input type="password" placeholder="Password" id="password">
+        <button (click)="mainLogin()">Login</button>
+    </div>}
+    @if (signin) {
+    <div class="signupWrap">
+        <input type="text" placeholder="Full Name" id="name">
+        <input type="email" placeholder="Enter your mail" id="email">
+        <input type="password" placeholder="Password" id="pass">
+        <input type="password" placeholder="Confirm Password" id="cpass">
+        <button (click)="registerUser()">Sign Up</button>
+    </div>}
+</div>

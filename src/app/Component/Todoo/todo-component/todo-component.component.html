@@ -1,0 +1,31 @@
+<div class="mainWrap">
+    <div class="logout"><button (click)="logout()">Logout</button></div>
+    <div class="addWrap">
+        <input type="text" placeholder="Add new task" id="newtask">
+        <button (click)="editingMode ? updateTask() : addTask()">{{editingMode ? "Update": "Add"}}</button>
+    </div>
+    <div class="bottomWrap">
+        <div class="pendingTaskWrap">
+            <div>Pending {{this.todoListCount}} out of {{this.doneListCount}}</div>
+            <div class="pending"> Pending</div>
+            <div class="taskspen">
+                @for (item of user.todo_list; track $index) {
+                    <div>
+                        <input type="checkbox" (change)="moveToDoneList(item)">{{item.task}}
+                        <button (click)="editTask(item)">Edit</button><button (click)="deleteTask(item)">Delete</button>
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="completedWrap">
+            <div class="completed"> Completed</div>
+            <div class="taskscom"> @for (item of user.done_list; track $index) {
+                <div>
+                    <input type="checkbox" checked (change)="moveTotodoList(item)">{{item.task}}
+                    <button (click)="deleteTasks(item)">Delete</button>
+                </div>
+            }</div>
+        </div>
+    </div>
+    
+</div>

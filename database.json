@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "john@example.com",
+      "password": "hashed_password",
+      "todo_list": [
+        {
+          "id": 779454,
+          "task": "Aswin"
+        }
+      ],
+      "done_list": [
+        {
+          "id": 41119,
+          "task": "Athul"
+        },
+        {
+          "id": 904759,
+          "task": "Aswin"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "email": "jane@example.com",
+      "password": "hashed_password",
+      "todo_list": [
+        {
+          "id": 4,
+          "task": "Call mom"
+        }
+      ],
+      "done_list": []
+    }
+  ]
+}
