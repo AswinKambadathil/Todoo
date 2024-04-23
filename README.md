@@ -1,6 +1,6 @@
 # Database
 
-This database is a json database so you have to install json server using [npm install -g json-server] command. Then run [json-server --watch db.json] command. Keeping the json server live, open new terminal and do [ng serve] if angular is installed or else follow the steps below
+This is a json database so you have to install json server using [npm install -g json-server] command. Then run [json-server --watch db.json] command. Keeping the json server live, open new terminal and do [ng serve] if angular is installed or else follow the steps below
 
 # Todoo
 
